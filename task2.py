@@ -1,13 +1,13 @@
 
-def fast_pow(x, y, res=1):
+def fast_pow(x, y, result=1):
     while y > 0:
         if y == 1:
-            return res * x
+            return result * x
         if y % 2 != 0:
-            res *= x
+            result *= x
         x *= x
         y //= 2
-    return res
+    return result
 
 print(fast_pow(2,4))
 
