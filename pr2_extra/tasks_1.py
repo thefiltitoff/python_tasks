@@ -1,8 +1,9 @@
 import random
 import sys
+import os
 
-#task 1
-
+#task 1 Преобразовать элементы списка s из строковой в числовую форму
+print("1.Преобразовать элементы списка s из строковой в числовую форму")
 def to_list(list):
     return [int(i) for i in list]
 
@@ -10,16 +11,16 @@ mass = ['1', '2', '3', '4']
 print(mass)
 print(to_list(mass))
 
-#task 2
-
+#task
+print("2.Подсчитать количество различных элементов в последовательности s.")
 def count(list):
     return len(set(list))
 
 s = ['2', '3', '3', '4', '5', True, 1, False]
 print(count(s))
 
-#task 3
-
+#task 3 Обратить последовательность s без использования функций.
+print("3.Обратить последовательность s без использования функций.")
 def reverse(lst):
     return lst[::-1]
 
@@ -27,45 +28,50 @@ def reverse(lst):
 s = ['1', '2', '3', '4', '5', True, 1, False]
 print(reverse(s))
 
-#task 4
+#task 4 Выдать список индексов, на которых найден элемент x в последовательности s.
 
+print("4.Выдать список индексов, на которых найден элемент x в последовательности s.")
 def index(lst, x):
     return [idx for idx, e in enumerate(lst) if e == x]
-
 
 x = '6'
 s = ['1', '3', '4', '6', '3', True, 1, '6']
 print(index(s, x))
 
 #task 5
-
+#Сложить элементы списка s с четными индексами.
+print("5.Сложить элементы списка s с четными индексами.")
 def e_sum(lst):
     return sum(lst[::2])
 
 s = [11, 100, 6, 3, 1, 5, 13]
 print(e_sum(s))
 
-#task 6
-
+#task 6 Найти строку максимальной длины в списке строк s.
+print("6.Найти строку максимальной длины в списке строк s.")
 def max_str(lst):
     return max(len(i) for i in lst)
 
 
 s = ['qwe', 'qwerty', 'qw', 'qwerty12', 'qwe12345678', 'q']
-print(max_str(s))
+this = 0
+for i in range(len(s)):
+    if len(s[i])>len(s[this]):
+        this = i
+print(s[this])
 
 # сокращение символов
-
+print("Cокращение символов")
 def shorter():
     i = 0
-    return "muchcodewow"[:i + 4]
+    return 'mcwuoocdwhe'[i::3]
 
 print(shorter())
 
-"""
-Напишите функцию generate_groups()
 
-"""
+#Напишите функцию generate_groups()
+
+
 
 def generate_groups():
     list_groups = {'K': 25, 'B': 13, 'M': 2, 'H': 10}
@@ -153,3 +159,17 @@ def generate_array(*dim):
 
 arr = generate_array([1, 2], [3, 4], [5, 6])
 print(arr)
+
+
+import random
+
+first_names=('Анатолий',' Аркадий','Артур', 'Валентин', 'Василий')
+last_names=('Смирнов','Попов','Петров','Соколов','Михайлов')
+sred = ('В.','Г.','Ш.','К.','Л.',)
+
+group=" ".join(random.choice(first_names)+" "+random.choice(sred)+" "+random.choice(last_names) for _ in range(5))
+
+
+print(group)
+
+
