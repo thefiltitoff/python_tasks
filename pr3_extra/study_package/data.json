@@ -1,0 +1,17 @@
+{
+  "1": {
+    "name": "Adolf",
+    "surname": "Hitler",
+    "age": 60
+  },
+  "2": {
+    "name": "Joseph",
+    "surname": "Stalin",
+    "age": 58
+  },
+  "3": {
+    "name": "Benito",
+    "surname": "Mussolini",
+    "age": 45
+  }
+}
