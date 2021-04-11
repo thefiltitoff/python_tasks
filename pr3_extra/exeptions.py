@@ -1,30 +1,25 @@
 import logging
 
-def main():
-    raise Exception("Hey!")
-    run_with_log(main)
 
-def run_with_log(main):
-    logging.basicConfig(level=logging.DEBUG, filename='myapp.log')
+def main(func):
+    f = open('myapp.log','a')
+    f.write(str(type(func)))
+    f.write(str(func))
+    f.write('\n')
+    f.close()
+   # raise Exception("Zero!")
+
+
+def run_with_log(a):
+
     try:
-        main()
-    except:
+        return 1/a
+    except ZeroDivisionError as e:
+        main(e)
+        logging.basicConfig(level=logging.DEBUG, filename='myapp.log')
         logging.exception("Oops:")
 
 
-print(main())
-
-
-"""
-def main():
-    raise Exception("Hey!")
-
-logging.basicConfig(level=logging.DEBUG, filename='myapp.log')
-
-try:
-    main()
-except:
-    logging.exception("Oops:")
-"""
+run_with_log(0)
 
 
