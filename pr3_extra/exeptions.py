@@ -10,16 +10,19 @@ def main(func):
    # raise Exception("Zero!")
 
 
-def run_with_log(a):
+def run_with_log(func):
 
     try:
-        return 1/a
+        func()
     except ZeroDivisionError as e:
         main(e)
         logging.basicConfig(level=logging.DEBUG, filename='myapp.log')
         logging.exception("Oops:")
 
 
-run_with_log(0)
+def test():
+    return 1/0
+
+run_with_log(test)
 
 

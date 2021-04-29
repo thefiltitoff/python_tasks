@@ -1,0 +1,7 @@
+setup.py
+study_package/test1.py
+study_package/test2.py
+study_package.egg-info/PKG-INFO
+study_package.egg-info/SOURCES.txt
+study_package.egg-info/dependency_links.txt
+study_package.egg-info/top_level.txt

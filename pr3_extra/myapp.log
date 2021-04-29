@@ -1,0 +1,16 @@
+<class 'ZeroDivisionError'>division by zero
+ERROR:root:Oops:
+Traceback (most recent call last):
+  File "/Users/felikstitov/PycharmProjects/python_tasks/pr3_extra/exeptions.py", line 16, in run_with_log
+    func()
+  File "/Users/felikstitov/PycharmProjects/python_tasks/pr3_extra/exeptions.py", line 24, in test
+    return 1/0
+ZeroDivisionError: division by zero
+<class 'ZeroDivisionError'>division by zero
+ERROR:root:Oops:
+Traceback (most recent call last):
+  File "/Users/felikstitov/PycharmProjects/python_tasks/pr3_extra/exeptions.py", line 16, in run_with_log
+    func()
+  File "/Users/felikstitov/PycharmProjects/python_tasks/pr3_extra/exeptions.py", line 24, in test
+    return 1/0
+ZeroDivisionError: division by zero

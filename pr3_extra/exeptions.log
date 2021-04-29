@@ -1,0 +1,9 @@
+
+<class 'ZeroDivisionError'>
+2021-04-15 01:36:01,392 ERROR    Exception occurred: 
+Traceback (most recent call last):
+  File "/Users/felikstitov/PycharmProjects/python_tasks/pr3_extra/exeptions.py", line 15, in run_with_log
+    func()
+  File "/Users/felikstitov/PycharmProjects/python_tasks/pr3_extra/exeptions.py", line 29, in test
+    return 1 / 0
+ZeroDivisionError: division by zero
